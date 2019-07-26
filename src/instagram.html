@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, 
+initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/layouts/innerPageStyle.css">
+  <script src="vendor/truffle-contract/dist/truffle-contract.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
+  <title>YourPrivacyManager</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="setup" class="content">
+      <h1 class="header" id="header"> Instagram privacy settings</h1>
+      <p>In this section you can manage your instagram profile privacy.</p>
+      <div class="settings">
+        <div class="question">
+        </div>
+        <form class="form" onsubmit="App.setPrivacy(); return false;">
+          <!-- Profile privacy -->
+          <h2>Do you want your account to be:</h2>
+          <h6 class="header">By choosing one of the following options you can set who can access most of your profile
+            content, included photos, stories and videos you post.</h6>
+          <div class="inputGroup">
+            <input id="privateProfileOption" name="radio" type="radio" required/>
+
+            <label for="privateProfileOption">Private</label>
+          </div>
+          <div class="inputGroup">
+            <input id="publicProfileOption" name="radio" type="radio" />
+            <label for="publicProfileOption">Public</label>
+          </div>
+            <!-- message replies -->
+          <h2>Allow message replies to your stories from:</h2>
+          <div class="inputGroup">
+            <input id="storyFoll" name="po" type="radio" required/>
+            <label id="storyFollLabel" for="storyFoll">Everyone </label>
+          </div>
+          <div class="inputGroup">
+            <input id="storyFollFoll" name="po" type="radio" />
+            <label id="storyFollFollLabel" for="storyFollFoll">Followers
+            </label>
+          </div>
+          <div class="inputGroup">
+            <input id="storyFollYFoll" name="po" type="radio" />
+            <label id="storyFollYFollLabel" for="storyFollYFoll">Followers you follow back
+            </label>
+          </div>
+          <div class="inputGroup">
+            <input id="storyYFoll" name="po" type="radio" />
+            <label id="storyYFollLabel" for="storyYFoll">People you follow
+            </label>
+          </div>
+          <div class="inputGroup">
+            <input id="storyNoOne" name="po" type="radio" />
+            <label id="storyNoOneLabel" for="storyNoOne">No one
+            </label>
+          </div>
+
+          <!-- comments privacy -->
+          <div id="commentSection">
+            <h2>Who can comment on your posts?</h2>
+            <div class="inputGroup" id="comments">
+              <input id="commEv" name="wo" type="radio" required/>
+              <label for="commEv">Everyone</label>
+            </div>
+            <div class="inputGroup">
+              <input id="commPff" name="wo" type="radio" />
+              <label for="commPff">People you follow and your
+                followers </label>
+            </div>
+            <div class="inputGroup">
+              <input id="commPf" name="wo" type="radio" />
+              <label for="commPf">People and followers you follow
+              </label>
+            </div>
+            <div class="inputGroup">
+              <input id="commFol" name="wo" type="radio" />
+              <label for="commFol">Your followers
+              </label>
+            </div>
+
+          </div>
+
+          <!-- Activity status -->
+          <h2>Do you want to show your activity status?</h2>
+          <div class="inputGroup">
+            <input id="actY" name="lo" type="radio" required/>
+            <label for="actY">Yes</label>
+          </div>
+          <div class="inputGroup">
+            <input id="actN" name="lo" type="radio" />
+            <label for="actN">No </label>
+          </div>
+          <div class="inputG">
+             <label for="salt" style="visibility: visible; 
+             width:40%;" >Password:</label> 
+          <input type="password"  id="salt" style="visibility: visible; 
+          width:60%;" > 
+          </div>
+          <div style="margin:auto; display:block;">
+          <input type="submit" id="submit" ><label class="submitButton"
+            for="submit">Submit</label>
+          </div>
+        </form>
+
+        <div style="max-width: 600px; margin: 24px auto;">
+
+        </div>
+      </div>
+
+    </div>
+    
+    <div id="eventCatcher" class="content" style="display:none; ">
+       
+      <div id="eventinfo" class="event"  ></div>
+      <p>click <a href="/index.html">here</a> to go back to the homepage!</p>
+      </div>
+</div>
+</body>
+
+</html>

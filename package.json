@@ -1,0 +1,37 @@
+{
+  "name": "your-privacy-manager",
+  "version": "1.0.0",
+  "description": "Decentralized application for management of privacy settings",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "lara.fasci@unirc.it",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "express": "^4.17.1",
+    "nodemon": "^1.17.3",
+    "truffle": "5.0.2",
+    "truffle-contract": "3.0.6",
+    "web3.js": "1.0.0-beta.34",    
+    "truffle-hdwallet-provider": "^1.0.13"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "loader": "^2.1.1",
+    "path": "^0.12.7",
+    "touch-cli": "0.0.1",
+    "truffle": "5.0.2",
+    "truffle-contract": "3.0.6",
+    "truffle-hdwallet-provider": "^1.0.13",
+    "web3.js": "1.0.0-beta.34"
+  }
+}
