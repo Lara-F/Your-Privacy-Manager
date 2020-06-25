@@ -19,13 +19,12 @@ contract PrivacyManager {
     }
 
     function setPrivacy(bytes32 _msg_sender, bytes memory _setting_graph) public returns(bool success) {
+        userSettingStructs[_msg_sender].setting_graph = _setting_graph;
         if (!isSet(_msg_sender)) {
-            userSettingStructs[_msg_sender].setting_graph = _setting_graph;
             userSettingStructs[_msg_sender].index = userSettingIndex.push(_msg_sender) - 1;
             emit PrivacySetting(_msg_sender, _setting_graph);
             return true;
         } else {
-            userSettingStructs[_msg_sender].setting_graph = _setting_graph;
             emit SettingChange(_msg_sender, _setting_graph);
             return true;
         }
