@@ -30,11 +30,11 @@ body{
 .area{
     
     background: linear-gradient(219deg, #722547, #92294d, #b4466b, #dd789a);
-background-size: 800% 800%;
-pointer-events: none;
--webkit-animation: AnimationName 47s ease infinite;
--moz-animation: AnimationName 47s ease infinite;
-animation: AnimationName 47s ease infinite;
+    background-size: 800% 800%;
+    pointer-events: none;
+    -webkit-animation: AnimationName 47s ease infinite;
+    -moz-animation: AnimationName 47s ease infinite;
+    animation: AnimationName 47s ease infinite;
     width: 100%;
     height:100vh;
     
@@ -58,7 +58,7 @@ animation: AnimationName 47s ease infinite;
     100%{background-position:0% 30%}
 }
 .mainblock{
-   width:35%;
+    width:35%;
     min-height: 300px;
     border-radius: 25px;
     border-width: 1px;
@@ -208,8 +208,8 @@ h1,h3{
 
 .boxes .box {
 	float: left;
-    width: 18%;
-    min-height: 300px;
+   	width: 18%;
+   	min-height: 300px;
 	padding: 10px;
 	text-align: center;
 	overflow: hidden;
@@ -235,7 +235,7 @@ h1,h3{
     background-color:tomato;
     color: white;
     margin:20px;
-  display:block;
+    display:block;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-radius: 25px;
     padding-left: 50px;
@@ -250,5 +250,7 @@ h1,h3{
 
     
 }
+
+/* Reference: https://codepen.io/mohaiman/pen/MQqMyo*/
 
 
