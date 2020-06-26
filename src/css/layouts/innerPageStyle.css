@@ -9,14 +9,12 @@ a{
     text-decoration: none;
 }
 body{
-    font-family: 'Exo', sans-serif;
-    
+    font-family: 'Exo', sans-serif;    
     background: linear-gradient(219deg, #722547, #92294d, #b4466b, #dd789a);
-background-size: 800% 800%;
--webkit-animation: AnimationName 20s ease infinite;
--moz-animation: AnimationName 20s ease infinite;
-
-animation: AnimationName 20s ease infinite;
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 20s ease infinite;
+    -moz-animation: AnimationName 20s ease infinite;
+    animation: AnimationName 20s ease infinite;
 }
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 30%}
@@ -34,19 +32,19 @@ animation: AnimationName 20s ease infinite;
     100%{background-position:0% 30%}
 }
  .container{
-background-color:#222222;
-width:70%;
-margin: 0 auto;
-margin-top:50px;
-margin-bottom: 50px;
-border-radius: 50px;
-border: 1px solid #dbd8cf;
-background: linear-gradient(left, #eee  0%, #fff 10%);
-background: -ms-linear-gradient(left, #eee  0%,#fff 10%);
-background: -moz-linear-gradient(left, #eee  0%,#fff 10%);
-background: -webkit-linear-gradient(left, #eee  0%, #fff 10%);
-box-shadow: -44px 120px 80px -72px #fff inset, -44px -120px 80px -72px #fff inset;
-min-height: 800px;
+    background-color:#222222;
+    width:70%;
+    margin: 0 auto;
+    margin-top:50px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    border: 1px solid #dbd8cf;
+    background: linear-gradient(left, #eee  0%, #fff 10%);
+    background: -ms-linear-gradient(left, #eee  0%,#fff 10%);
+    background: -moz-linear-gradient(left, #eee  0%,#fff 10%);
+    background: -webkit-linear-gradient(left, #eee  0%, #fff 10%);
+    box-shadow: -44px 120px 80px -72px #fff inset, -44px -120px 80px -72px #fff inset;
+    min-height: 800px;
 
 }
  .content{
@@ -90,7 +88,7 @@ width:100%;
       transition: color 200ms ease-in;
       overflow: hidden;
 }
-      .inputGroup   label:before {
+.inputGroup   label:before {
         width: 10px;
         height: 10px;
         border-radius: 50%;
@@ -104,18 +102,16 @@ width:100%;
         opacity: 0;
         z-index: -1;
       }
-      .submitButton {
-          margin:0 auto;
+ .submitButton {
+        margin:0 auto;
         color: white;
         border-radius: 25px;
         padding: 15px 80px;
         background-color: #a11261;
-        
-    
-    }
+       }
       
 
-      .inputGroup   label:after {
+.inputGroup   label:after {
         width: 32px;
         height: 32px;
         content: '';
@@ -135,20 +131,20 @@ width:100%;
       }
     
 
-    input:checked ~ label {
+input:checked ~ label {
       color: #fff;
     }
-      input:checked ~ label:before {
+input:checked ~ label:before {
         transform: translate(-50%, -50%) scale3d(56, 56, 1);
         opacity: 1;
       }
 
-      input:checked ~ label:after {
+input:checked ~ label:after {
         background-color: #54E0C7;
         border-color: #54E0C7;
       }
    
-    input {
+input {
       width: 32px;
       height: 32px;
       order: 1;
