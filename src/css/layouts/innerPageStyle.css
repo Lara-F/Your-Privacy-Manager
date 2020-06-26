@@ -1,4 +1,4 @@
-
+/*Reference :https://codepen.io/BuddyLReno/pen/boGRPO*/
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 *{
@@ -51,8 +51,7 @@ body{
     padding: 50px;
     text-align: center;
 }
-.header{
-   
+.header{   
     color:rgb(68, 67, 67);
 }
 .event{
@@ -69,11 +68,11 @@ body{
     position: relative;
 }
 .inputG {
-width:100%;
-  background-color: #fff;
-  display: block;
-  margin: 10px 0;
-  position: relative;
+    width:100%;
+    background-color: #fff;
+    display: block;
+    margin: 10px 0;
+    position: relative;
 }
 
 .inputGroup   label, .inputG  label {
@@ -182,3 +181,4 @@ html {
 #inputG  input{
   visibility: visible;
   }
+
