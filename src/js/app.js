@@ -8,6 +8,7 @@ App = {
     await App.loadContract()
   },
   loadWeb3: async () => {
+     //https://medium.com/metamask/https-medium-com-metamask-breaking-change-injecting-web3-7722797916a8
     if (typeof web3 !== 'undefined') {
       App.web3Provider = web3.currentProvider
       web3 = new Web3(web3.currentProvider)
@@ -38,7 +39,6 @@ App = {
     }
   },
   loadAccount: async () => {
-    //https://medium.com/metamask/https-medium-com-metamask-breaking-change-injecting-web3-7722797916a8
     App.account = await web3.eth.getAccounts()
   },
   loadContract: async () => {
